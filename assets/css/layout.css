@@ -273,10 +273,6 @@ header .search-form {
     padding: 10px;
 }
 
-.toggle-slide-btn {
-    display: none;
-}
-
 header .search-input {
     position: absolute;
     right: 0;
@@ -327,13 +323,10 @@ header .search-input form {
     z-index: 2;
 }
 
-.cancel-btn {
+.cancel-btn, .toggle-slide-btn, .slider-wrapper .image-list::-webkit-scrollbar{
     display: none;
 }
 
-/* saarch btn with overlay */
-
-/* saarch btn with overlay */
 /* # Home Page
   =================================================*/
 /* section 1 start */
@@ -585,10 +578,6 @@ header .search-input form {
     margin-bottom: 30px;
     overflow-x: auto;
     scrollbar-width: none;
-}
-
-.slider-wrapper .image-list::-webkit-scrollbar {
-    display: none;
 }
 
 .slider-wrapper .image-list .image-item {
@@ -1201,10 +1190,10 @@ footer .site-logo,
         max-width: 720px;
     }
 
-    .col-md-4 {
+    /* .col-md-4 {
         flex: 0 0 auto;
         width: 33.33333333%;
-    }
+    } */
 
     .col-md-6 {
         flex: 0 0 auto;
@@ -1216,15 +1205,7 @@ footer .site-logo,
     .container {
         max-width: 960px;
     }
-    .col-lg {
-        flex: 1 0 0%;
-    }
-
-    .col-lg-2 {
-        flex: 0 0 auto;
-        width: 16.66666667%;
-    }
-
+    
     .col-lg-3 {
         flex: 0 0 auto;
         width: 25%;
