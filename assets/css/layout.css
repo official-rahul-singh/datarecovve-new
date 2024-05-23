@@ -102,9 +102,6 @@
     align-items: center;
   }
 
-  .justify-content{
-    justify-content: center;
-  }
   .justify-between{
     justify-content: space-between;
   }
@@ -291,26 +288,29 @@
     position: absolute;
     right: 0;
     transform: translateY(-279px);
-    transition: var(--transition);
+    transition: all 0.3s ease-in-out;
     z-index: 1;
     width: 100%;
     background: #ffffff;
     height: clamp(6.25rem, 0.4464rem + 15.4762vw, 14.375rem);
+    justify-content: center;
+  }
+
+  header .search-input svg{
+    width: clamp(1rem, 0.8214rem + 0.4762vw, 1.25rem);
+    height: clamp(1rem, 0.8214rem + 0.4762vw, 1.25rem);
   }
 
   header .search-show{
-    display: flex;
-    align-items: center;
-    justify-content: center;
     transform: translateY(24px);
     box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
   }
-  header .search-show form{
+  header .search-input form{
     width: calc(83%);
     border-bottom: 1px solid rgb(193 193 193 / 40%);
   }
 
-  .search-show form input{
+  header .search-input form input{
     width: 100%;
   }
   
