@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&display=swap');
+
 /* color */
 :root {
   --pc: #e11f26;
@@ -27,9 +29,10 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Inter Tight", sans-serif;
+  /* font-family: "Inter Tight", sans-serif; */
+  font-family: "Poppins", sans-serif;
   scroll-behavior: smooth;
-  font-weight: var(--fw-3);
+  /* font-weight: var(--fw-3); */
   color: var(--txt-color);
 }
 
