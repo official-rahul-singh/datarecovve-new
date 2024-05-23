@@ -237,10 +237,6 @@ window.addEventListener('scroll', function() {
 
   
 
-
-
-
-
 // search
 // header search button
 let search_btn = document.querySelector('.search-btn');
@@ -252,7 +248,7 @@ search_btn.addEventListener('click', function () {
     search_btn.innerHTML = isSvg1 ? svg2 : svg1;
     isSvg1 = !isSvg1;
     search_input.style.display = search_input.style.display === "block" ? "none" : "block";
-});
+}); 
 
 
 
