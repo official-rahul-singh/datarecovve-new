@@ -239,17 +239,38 @@ window.addEventListener('scroll', function() {
 
 // search
 // header search button
-let search_btn = document.querySelector('.search-btn');
-let search_input = document.querySelector('.search-input');
+// let search_btn = document.querySelector('.search-btn');
+// let search_input = document.querySelector('.search-input');
+// let svg1 = '<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 16 16" fill="none"><path d="M7.333 12.667A5.333 5.333 0 1 0 7.333 2a5.333 5.333 0 0 0 0 10.667ZM14 14l-2.9-2.9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg>';
+// let svg2 = '<svg xmlns="http://www.w3.org/2000/svg" height="18" width="18" viewBox="0 0 384 512" fill="#000"><path d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z"/></svg>';
+// let isSvg1 = true;
+// search_btn.addEventListener('click', function () {
+//     search_btn.innerHTML = isSvg1 ? svg2 : svg1;
+//     isSvg1 = !isSvg1;
+//     search_input.style.display = search_input.style.display === "block" ? "none" : "block";
+// }); 
+
+
+// search start
+let search_btn = document.querySelector(".search-btn");
+let search_input = document.querySelector(".search-input");
 let svg1 = '<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 16 16" fill="none"><path d="M7.333 12.667A5.333 5.333 0 1 0 7.333 2a5.333 5.333 0 0 0 0 10.667ZM14 14l-2.9-2.9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg>';
 let svg2 = '<svg xmlns="http://www.w3.org/2000/svg" height="18" width="18" viewBox="0 0 384 512" fill="#000"><path d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z"/></svg>';
 let isSvg1 = true;
+
 search_btn.addEventListener('click', function () {
     search_btn.innerHTML = isSvg1 ? svg2 : svg1;
     isSvg1 = !isSvg1;
-    search_input.style.display = search_input.style.display === "block" ? "none" : "block";
-}); 
+    
+    if (search_input.classList.contains('search-show')) {
+        search_input.classList.remove('search-show');
+    } else {
+        search_input.classList.add('search-show');
+    }
+});
 
+
+// search end
 
 
 // accordion code start

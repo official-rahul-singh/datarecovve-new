@@ -197,11 +197,16 @@ header ul .dropdown ul {
 }
 
 .search-input  form{
-  border-top: 3px solid var(--primary-color);
-  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
+  /* border-top: 3px solid var(--primary-color); */
+  /* box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25); */
   background-color: var(--white);
-  border-radius: 30px;
+  /* border-radius: 30px; */
 }
+
+.search-show form input{
+ font-size: clamp(1rem, 0.5536rem + 1.1905vw, 1.625rem);
+}
+
 /* search form */
   header .btn {
     font-size: var(--fs-3);
