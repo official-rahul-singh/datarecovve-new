@@ -66,6 +66,9 @@
     .mb-0{
       margin-bottom: 0 !important;
     }
+    .mb-06{
+      margin-bottom: 6px;
+    }
 
     ol, ul {
       padding-left: 1rem;
