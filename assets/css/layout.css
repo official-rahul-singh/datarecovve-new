@@ -1190,11 +1190,6 @@ footer .site-logo,
         max-width: 720px;
     }
 
-    /* .col-md-4 {
-        flex: 0 0 auto;
-        width: 33.33333333%;
-    } */
-
     .col-md-6 {
         flex: 0 0 auto;
         width: 50%;
@@ -1205,7 +1200,7 @@ footer .site-logo,
     .container {
         max-width: 960px;
     }
-    
+
     .col-lg-3 {
         flex: 0 0 auto;
         width: 25%;
