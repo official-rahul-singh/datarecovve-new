@@ -92,6 +92,13 @@ h6,
 .all-page :is(h2, h3, h4, h5, h6, .h2, .h3, .h4, .h5, .h6) {
   margin-bottom: 20px !important;
 }
+.all-page :is(p>a:hover, li>a:hover, h2>a:hover, h3>a:hover, h4>a:hover, h5>a:hover, h6>a:hover):not(.toc-body li a, .auth-social li a) {
+  border-bottom: 2px solid var(--pc) !important;
+  padding-bottom: 2px;
+  transition: unset;
+}
+
+
 .all-page a {
   font-weight: var(--fw-2);
 }
@@ -573,7 +580,6 @@ gap: 10px;
 
 .toc-body .active > a {
   color: var(--pc);
-  font-weight: var(--fw-1);
   text-decoration: underline;
 }
 
@@ -736,7 +742,8 @@ blockquote,
 /* # Contact Page Templates
 =================================================*/
 .contact-us {
-  background-color: #f3f3f3;
+  /* background-color: #f3f3f3; */
+  background: linear-gradient(311deg, #eaf2fed9 58%, rgb(255 230 231 / 72%) 75%, #f0e5e6 89%);
 }
 
 .contact-us :is(input, textarea) {

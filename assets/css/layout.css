@@ -753,6 +753,7 @@ header .search-input form {
     justify-content: space-between;
     align-items: center;
     padding: 16px 20px;
+    user-select: none;
 }
 
 .toc-body > ul {
@@ -767,7 +768,7 @@ header .search-input form {
     content: "";
     position: absolute;
     top: 6px;
-    right: 0px;
+    right: -11px;
     width: 16px;
     height: 16px;
     cursor: pointer;
@@ -919,7 +920,7 @@ blockquote::after,
 }
 
 [class*="widget-title"] {
-    margin-bottom: 30px;
+    margin-bottom: 20px;
     position: relative;
     gap: 15px;
 }
