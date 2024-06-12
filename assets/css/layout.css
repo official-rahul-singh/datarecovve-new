@@ -498,7 +498,7 @@ header .search-input form {
     display: flex;
     flex-flow: column;
     height: 100%;
-    gap: 12px;
+    gap: 20px;
 }
 
 .blog-card:hover img {
@@ -716,7 +716,7 @@ header .search-input form {
 .author span {
     display: flex;
     flex-direction: column;
-    gap: 2px;
+    /* gap: 2px;*/
 }
 
 .author img {
@@ -883,8 +883,8 @@ blockquote,
 }
 
 .dr-widget,
-blockquote {
-    margin-bottom: 30px;
+blockquote, .accordions {
+    margin-block: 35px;
 }
 
 .dr-widget::after,
@@ -944,8 +944,12 @@ blockquote::after,
 /* widgets */
 
 /* Accordians faq start */
+/* .accordions{
+    margin-bottom: 15px;
+    padding: 16px 20px 14px 20px;
+} */
 .accordions details {
-    margin-bottom: 30px;
+    margin-bottom: 15px;
     padding: 16px 20px 14px 20px;
 }
 .accordions summary {

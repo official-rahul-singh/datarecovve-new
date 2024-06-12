@@ -47,7 +47,7 @@ a {
 }
 
 p {
-  line-height: 1.6;
+  line-height: 2.2;
   font-weight: var(--fw-4);
 }
 
@@ -90,7 +90,7 @@ h6,
 }
 
 .all-page :is(h2, h3, h4, h5, h6, .h2, .h3, .h4, .h5, .h6) {
-  margin-bottom: 15px !important;
+  margin-bottom: 20px !important;
 }
 .all-page a {
   font-weight: var(--fw-2);
@@ -269,10 +269,10 @@ header nav .active {
   transition: var(--transition);
 }
 
-.card-box:hover,
+/* .card-box:hover,
 .blog-card:hover {
   box-shadow: 4px 4px 14px 1px rgba(0, 0, 0, 0.15);
-}
+} */
 
 .card-content p {
   font-size: var(--fs-3);
@@ -311,6 +311,20 @@ header nav .active {
 .link a::before {
   background-color: var(--pc);
   transition: var(--transition);
+}
+
+.card-meta {
+gap: 10px;
+}
+.categ{
+  background-color: var(--light-pc);
+  padding:5px 10px;
+  font-size: 14px;
+  border-radius: 30px;
+}
+
+.time{
+  font-size: 14px;
 }
 /* blog card end */
 
